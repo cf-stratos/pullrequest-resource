@@ -16,7 +16,7 @@ resource_types:
 - name: pull-request
   type: docker-image
   source:
-    repository: jtarchie/pr
+    repository: irfanhabib/pr
 ```
 
 ## Source Configuration
@@ -56,6 +56,9 @@ resource_types:
   were created via users that forked from your repo.
 
 * `label`: *Optional.* If set to a string it will only return pull requests that have been
+marked with that specific label. It is case insensitive.
+
+* `exclude_label`: *Optional.* If set to a string it will exclude pull requests that have been
 marked with that specific label. It is case insensitive.
 
 * `username`: *Optional.* Username for HTTP(S) auth when pulling/pushing.
